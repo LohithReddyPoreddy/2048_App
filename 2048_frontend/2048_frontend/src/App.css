@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.empty-block {
+  background-color: #ccc;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Define three rows: header, grid, footer */
+  grid-gap: 10px; /* Optional: Add space between rows */
+  height: 100vh; /* Full viewport height */
+}
+
+header {
+  background-color: #f5f5f5; /* Example background color for the header */
+  padding: 10px; /* Optional padding for the header */
+}
+
+footer {
+  background-color: #f5f5f5; /* Example background color for the footer */
+  padding: 10px; /* Optional padding for the footer */
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents grid from overflowing */
+}
+
+.grid-wrapper {
+  overflow: auto; /* Allow grid to scroll if needed */
+}
+
+
+
